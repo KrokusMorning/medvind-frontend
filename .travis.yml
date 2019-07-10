@@ -9,10 +9,11 @@ script:
 - npm run build
 deploy:
   provider: heroku
-  api-key:
-    secure: "$HEROKU_API_KEY"
   skip_cleanup: true
   app: medvind-frontend
   local_dir: build
+  api_key:
+      secure: "$HEROKU_API_KEY"
   on:
     repo: KrokusMorning/medvind-frontend
+    
