@@ -15,4 +15,4 @@ deploy:
     app: haxonomy
     local_dir: build
     on:
-        repo: fongie/haxonomy-frontend
+        repo: KrokusMorning/medvind-frontend
