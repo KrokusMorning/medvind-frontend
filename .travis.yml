@@ -1,18 +1,18 @@
 language: node_js
 node_js:
-    - "stable"
+- stable
 cache:
-    directories:
-        - node_modules
+  directories:
+  - node_modules
 script:
-    - npm test
-    - npm run build
+- npm test
+- npm run build
 deploy:
-    provider: heroku
-    api-key:
-        secure: $HEROKU_API_KEY
-    skip_cleanup: true
-    app: haxonomy
-    local_dir: build
-    on:
-        repo: KrokusMorning/medvind-frontend
+  provider: heroku
+  api-key:
+    secure: "$HEROKU_API_KEY"
+  skip_cleanup: true
+  app: medvind-frontend
+  local_dir: build
+  on:
+    repo: KrokusMorning/medvind-frontend
